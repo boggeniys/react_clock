@@ -46,7 +46,7 @@ export class App extends React.Component<{}, State> {
     window.clearInterval(this.timerId);
 
     document.removeEventListener('click', this.handleLeftClick);
-    document.removeEventListener('click', this.handleRightClick);
+    document.removeEventListener('contextmenu', this.handleRightClick);
   }
 
   render() {
